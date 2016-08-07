@@ -1,0 +1,556 @@
++comment('general style')
+body
+  background: #fafafa url(../image/body-bg.png) top center no-repeat
+  background-position-y: -180px
+
+.contain
+  padding-top: 120px
+.button-search 
+  left: auto
+  right: 3px
+.hphone
+  color: #fff
++cm('general 768px- styles')
++rx(767)
+  body
+    background: none !important
+  +cm('navbar-default styles')
+  .navbar-default
+    background-color: #292C31 !important
+  .contain
+    padding-top: 50px
+  .breadcrumb
+    margin: 0
+  .navbar
+    &-default
+      .navbar-toggle
+        margin-right: 30px
+  .toppatexta
+    padding-top: 0px !important
++cm('general 768px-991px styles')
++screen(768, 991)
+  body
+    background-position-y: -227px
+  .navbar-right
+    position: absolute
+    top: 10px
+    right: 70px
+  .contain
+    padding-top: 80px
+    width: 100%
+
++cm('pagination styles')
+.pagination 
+  .links
+    float: none
+    text-align: center
+    a,
+    b
+      margin-bottom: 10px
+      padding:
+        left: 0
+        right: 0
+      width: 32px
+      height: 32px
+      vertical-align: top
+      line-height: 23px
+      text-align: center
+  .results
+    padding-top: 20px
+    float: none
+    text-align: center
++comment('general 1200px+ styles')
++r(1200)
+  .pagination 
+    .links
+      float: left
+      text-align: left
+    .results
+      float: right
+      padding-top: 5px
++comment("home page style")
++cm('navbar styles')
+.navbar
+  &-default
+    margin: 0
+    border: 0 none
+    background-color: transparent
+    .navbar-toggle
+      border-color: #fff
+      z-index: 9999
+      &:hover,
+      &:focus
+        background-color: #fff
+        .icon-bar   
+          background-color: #000
+
+      .icon-bar    
+        height: 2px
+        margin: s
+          top: 3px
+          bottom: 3px
+        background-color: #fff
+  &-brand
+    padding: 
+      bottom: 0
+    height: 86px
+  &-nav
+    margin: 
+      top: 20px
+  .navbar
+    &-collapse
+      float: right
+      padding-right: 0
+    &-nav
+      >li
+        >a
+          padding: 
+            left: 10px
+            right: 10px
+          font: 400 14px/14px Roboto, Arial, sans-serif
+          color: #ffff3c
+          text-decoration: underline
+          &:hover
+            color: #fff
+            text-decoration: none
++rx(767)
+  .navbar
+    &__search
+      padding: 0 15px 10px
+      text-align: center
+  #search
+    float: none
+    display: inline-block
+    width: 100%
+    margin: 0
+  .hphone
+    left: 80px
+  #search input[type='text']
+    width: 100%
++cm('intro styles')
+.intro
+  &__text
+    float: right
++cm('zipper styles')
+.zipper
+  margin-top: 40px
++cm('manufacturer styles')
+.manufacturer
+  &__box
+    display: table
+    min-height: 190px
+    &--left
+      padding-right: 0
+    &--right
+      padding-left: 0
+  &__item
+    display: table-cell
+    vertical-align: middle
+    height: 100%
+  &__photo
+    background-color: #fff
+    img
+      display: inline-block
+      vertical-align: middle
++comment('footer styles')
+.footer
+  padding: 15px
+  &__heading
+    &--form
+      margin-bottom: 0
+  &__contact
+    padding-top: 15px
++comment ('home page 320px-991px style')
++screen(320, 991)
+  +cm('general styles')
+  h1, 
+  h2,
+  h3
+    font-weight: 500
+  .custom-background
+    background: #fafafa url(../image/m-body-bg.jpg) no-repeat scroll top center !important
+  +cm('navbar styles')
+  .navbar-default 
+    .navbar-toggle
+      margin-top: 20px
+  .navbar 
+    .navbar-collapse
+      position: absolute
+      margin: -1px 0 0
+      padding: 0
+      right: 0
+      left: 0
+    &-nav
+      position: relative
+      margin: 0
+      width: 100%
+      padding: 20px 0
+      background-color: #292C31
+      z-index: 3001
+      li
+        a
+          text-align: center          
+  .hphone  
+    top: 80%
+    left: 30%
+
+  +cm('intro styles')
+  .toppatexta 
+    h1
+      font-size: 30px
+  .intro
+    &__descr
+      p
+        font-size: 17px
+        text-align: center
+        span
+          font-size: 25px
+    &__text
+      padding-top: 130px
+      color: #000
+  +cm('zipper styles')
+  .ready_offer
+    margin: 
+      top: 60px
+      bottom: 30px
+    color: #000
+  .gline
+    margin: 20px 0
+  .existtable 
+    text-align: center
+    td
+      display: inline-block
+      width: 50%
+      max-width: 160px
+      margin-bottom: 29px
+  +cm('manufacturer styles')
+  .manufacturer
+    &__box
+      min-height: auto
+      padding: 
+        left: 15px
+        right: 15px
+  +cm('footer styles')
+  .rightfblock
+    float: none
+    text-align: center
+  .footer
+    padding-top: 70px
+    padding-bottom: 70px
+    &__contact
+      text-align: center
+    .rightfblock
+      margin: 0
+      float: none
+  .form-group
+    width: 100%
+    max-width: 340px
+    margin: 0 auto
+  #form-call
+    input
+      width: 100%
+  .btn-submit
+    width: 100%
+    float: none
++comment ('home page 768px-991px style')
++screen(768, 991)
+  +cm('general styles')
+  .custom-background
+    background: #fafafa url(../image/homebodybg.png) top center no-repeat !important
+  #lightning
+    width: 120px
+    height: 150px
+    left: 539px
+    top: 270px
+    +contain
+  +cm('navbar styles')
+  .navbar
+    .container
+      width: 100%
+    &-header
+      float: none
+    .navbar
+      &-collapse 
+        margin: 0
+        width: 50%
+        height: 100vh
+        border-color: transparent   
+        top: 0
+        left: auto
+      &-nav
+        >li
+          >a
+            padding-top: 20px
+            padding-bottom: 20px
+            border-bottom: 1px solid #ffff3c
+    &-nav
+      padding-top: 25px
+      height: 100%
+  +cm('zipper styles')
+  #slider-zipper, 
+  #list-images, 
+  #list-images li
+    height: 350px !important
+  #list-links
+    width: 100%
+  .existtable td
+    max-width: 138px
+  .islider 
+    .button_cat
+      margin: 0
+      width: 33%
+  +cm('footer styles')
+  .footer
+    &__contact
+      text-align: left
+
++comment ('home page 992px-1199px style')
++screen(992, 1199)
+  +cm('navbar styles')
+  .navbar
+    .navbar
+      &-collapse
+        float: none
+  +cm('intro styles')
+  .toppatexta 
+    h1
+      margin-top: 0
+  .intro__descr
+    padding-top: 22px !important
+  +cm('zipper styles')
+  .zipper
+    overflow: hidden
+  .islider
+    h2.topper
+      color: #000
+      text-align: left
+      margin-top: 25px
+      font-size: 25px
+  #slider-zipper,
+  #list-images
+    height: 350px !important
+  #lightning
+    width: 150px
+    height: 400px
+    top: 116px
+    left: 562px
+    +contain
+
++comment ('fix navbar-phone 400px- style')
++cm('general 768px- styles')
++rx(767)
+  .hphone
+    left: 105px
+    top: 58px
+  .navbar-brand
+    >img
+      max-height: 60px
++cm('general 400px- styles')
++rx(400)
+  .navbar
+    &__search
+      margin-top: -20px
+  .hphone
+    position: relative
+    text-align: center
+    left: auto
+    top: -35px
+    margin-left: 62px
++comment ('home page 1200px+ style')
++r(1200)
+  .container,
+  .container-fluid
+    max-width: 1700px
++comment('home page fix bugs on 768px-991px')
++screen(768, 991)
+  .hphone
+    left: 121px
+  .navbar 
+    .navbar
+      &-collapse
+        -webkit-transform: translateZ(1px)
+    &-default
+      .navbar-toggle
+        -webkit-transform: translateZ(1px)
++comment('home page fix bugs on 1090px-1199px')
++screen(1090, 1199)
+  #lightning
+    left: 52.5%
++comment('home page fix bugs on 1200px-1340px')
++screen(1200, 1340)
+  .navbar .navbar-nav > li > a
+    font-size: 12px
+  .toppatexta h1
+    margin-top: 0
++comment('home page fix bugs on 1560px+')
++r(1560)
+  #slider-zipper
+    margin-top: 78px
++comment('home page general zipper styles')
++cm('Impossible to change. Easily remove. Fuck the logic')
++screen(320, 991)
+  .zipper
+    margin: 0
+    color: #fff
+  .islider
+    margin-right: 0
+  h2.topper
+    width: 100%
+    left: 0
+    font-size: 20px
+    font-weight: 600
+    text-align: center
+  #slider-zipper
+    margin: 110px auto 0
+    width: 100%
+    height: 550px
+  #list-images, 
+  #list-images li
+    display: block
+    padding: 0px
+    height: 550px
+  #list-images 
+    li
+      position: relative
+      width: 100% !important
++comment('home page zipper 320px-767px styles')
++screen(320, 767)
+  #lightning
+    width: 100px
+    height: 120px
+    left: 0px
+    right: 109px
+    bottom: 106px
+    margin: auto
+    +contain
+    z-index: 6
+
+  .zipper
+    margin: 0
+    color: #fff
+  .islider
+    margin-right: 0
+  h2.topper
+    width: 100%
+    left: 0
+    font-size: 20px
+    font-weight: 600
+    text-align: center
+  #slider-zipper
+    margin: 110px auto 0
+    width: 100%
+    height: 550px
+  #list-images, 
+  #list-images li
+    display: block
+    padding: 0px
+    height: 550px
+  #list-images 
+    li
+      position: relative
+      width: 100% !important
+      a
+        position: absolute
+        margin: auto
+        top: 50px
+        left: 0px
+        right: 0px
+        height: 100%
+        float: none
+        >img
+          left: 0px
+          right: 0px
+          margin: auto
+  #slide-wrap
+    width: 100% !important
+  .left-pict
+    margin-top: 350px
+    width: 100%
+    float: none
+    text-align: center
+    margin-left: 0 !important
+  .button_cat
+    width: 60%
+    margin-left: 20%
+    margin-right: 20%
+
++comment('category page style')
+
++comment('category page 320px+ styles')
++r(320)
+  +cm('product styles')
+  .product
+    &-list 
+      .image
+        margin: 0
+        float: none
+        img
+          margin: 0 auto
+      .name
+        margin-top: 15px
++comment('category page 992px+ styles')
++r(992)
+  +cm('product styles')
+  .product
+    &-list 
+      .image
+        float: left
+        margin-right: 10px
+      .name
+        margin-top: 0
+        text-align: left
+
++comment('search page style')
+
++comment('search page 320px+ styles')
++r(320)
+  .sub_category
+    float: left
+  .product
+    &-filter
+      .display,
+      .limit,
+      .sort
+        margin:
+          top: 10px
+    &-compare
+      margin:
+        top: 10px
+    &-grid 
+      text-align: center
+      >div
+        display: inline-block
+        vertical-align: top
+  [name=filter_category_id]
+    margin-top: 10px
++comment('search page 460px- styles')
++rx(460)
+  .sub_category
+    float: none
+  .product
+    &-filter
+      .display,
+      .limit,
+      .sort
+        margin:
+          left: 0
+        float: none
+    &-compare
+      margin:
+        left: 0
+      float: none
+
++comment('product page style')
++comment('product page 768px- styles')
++rx(767)
+  .product-info 
+    >.left 
+      width: 100%
+      text-align: center
+      &+.right
+        margin-left: 0
+    .image
+      display: inline-block
+      vertical-align: middle
+      margin: 0 auto
+      float: none
